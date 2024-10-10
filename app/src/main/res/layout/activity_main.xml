@@ -7,12 +7,86 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eletek"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/gep"
+            android:src="@drawable/heart2"
+            android:layout_centerHorizontal="true"></ImageView>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/gep2"
+            android:src="@drawable/heart2"
+            android:layout_centerHorizontal="true"></ImageView>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/gep3"
+            android:src="@drawable/heart2"
+            android:layout_centerHorizontal="true"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gep_text"
+            android:text="Gép"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            ></TextView>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"></View>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jatekos_text"
+            android:text="Játékos"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            ></TextView>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/te1"
+            android:src="@drawable/heart2"
+            android:layout_centerHorizontal="true"></ImageView>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/te2"
+            android:src="@drawable/heart2"
+            android:layout_centerHorizontal="true"></ImageView>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/te3"
+            android:src="@drawable/heart2"
+            android:layout_centerHorizontal="true"></ImageView>
 
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dontetlen"
+        android:text="Döntetlenek száma: 0"
+        android:layout_below="@+id/eletek"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        ></TextView>
         <ImageView
             android:layout_width="50pt"
             android:layout_height="50pt"
             android:id="@+id/kep1"
             android:src="@drawable/rock"
+            android:layout_below="@+id/dontetlen"
             android:layout_centerHorizontal="true"></ImageView>
         <TextView
             android:layout_width="wrap_content"
@@ -40,50 +114,38 @@
             android:layout_below="@+id/kep2"
             android:layout_centerInParent="true"
             ></TextView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/text3"
-        android:text="Eredmény Ember:0 Computer:0"
-        android:textSize="25sp"
-        android:layout_below="@+id/text2"
-        android:layout_centerInParent="true"
-        ></TextView>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/text3"
+            android:layout_below="@+id/text2"
             android:layout_centerHorizontal="true">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ko"
+            <ImageButton
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                android:background="@drawable/rock"
                 android:id="@+id/ko"
-                android:textSize="25sp"
                 android:layout_below="@+id/textViewSzam"
                 android:layout_centerHorizontal="true"
                 >
-            </Button>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Papir"
-                android:textSize="25sp"
+            </ImageButton>
+            <ImageButton
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                android:background="@drawable/paper"
                 android:id="@+id/papir"
                 android:layout_below="@+id/textViewSzam"
                 android:layout_centerHorizontal="true"
                 >
-            </Button>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ollo"
-                android:textSize="25sp"
+            </ImageButton>
+            <ImageButton
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                android:background="@drawable/scissors"
                 android:id="@+id/ollo"
                 android:layout_below="@+id/textViewSzam"
                 android:layout_centerHorizontal="true"
                 >
-            </Button>
+            </ImageButton>
         </LinearLayout>
 
 </RelativeLayout>
